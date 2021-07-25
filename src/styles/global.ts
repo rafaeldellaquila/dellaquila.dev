@@ -53,6 +53,7 @@ const GlobalStyles = createGlobalStyle`
     body {
       font-family: ${theme.fonts.plex};
       font-size: ${theme.sizes.medium};
+      background-color: ${theme.colors.secondary};
     }
   `}
 `
