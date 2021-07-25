@@ -23,6 +23,7 @@ const GlobalStyles = createGlobalStyle`
   font-family: 'IBM Plex Mono';
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: local(''),
        url('../fonts/ibm-plex-mono-v6-latin-regular.woff2') format('woff2');
 }
@@ -31,6 +32,7 @@ const GlobalStyles = createGlobalStyle`
   font-family: 'IBM Plex Mono';
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
   src: local(''),
        url('../fonts/ibm-plex-mono-v6-latin-700.woff2') format('woff2');
 }
