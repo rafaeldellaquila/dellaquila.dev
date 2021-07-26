@@ -51,9 +51,13 @@ const GlobalStyles = createGlobalStyle`
     }
 
     body {
-      font-family: ${theme.fonts.plex};
+      font-family: ${theme.fonts.karla};
       font-size: ${theme.sizes.medium};
       background-color: ${theme.colors.secondary};
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
     }
   `}
 `

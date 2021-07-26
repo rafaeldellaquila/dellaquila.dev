@@ -5,7 +5,7 @@ export default {
   fonts: {
     karla:
       "Karla, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
-    plex: "'IBM Plex Mono', Courier, 'Lucida Console', monospace;",
+    plex: "'IBM Plex Mono', Courier, 'Lucida Console', monospace",
     normal: 400,
     bold: 600
   },
@@ -13,6 +13,7 @@ export default {
     primary: '#E53D1E',
     lightPrimary: '#F27613',
     secondary: '#00001B',
+    secondaryOpacity: 'rgba(0, 0, 27, 0.8)',
     lightSecondary: '#0A72CF',
     white: '#A2C5E5'
   },
