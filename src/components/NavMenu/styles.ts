@@ -66,6 +66,7 @@ export const MenuOverlay = styled.nav<MenuOverlayProps>`
     width: 60vw;
     overflow: hidden;
     pointer-events: ${isOpen ? 'all' : 'none'};
+    transition: opacity ${theme.transition.default};
     padding-top: ${theme.sizes.huge};
     > svg {
       width: ${theme.sizes.xlarge};
@@ -78,6 +79,8 @@ export const MenuOverlay = styled.nav<MenuOverlayProps>`
       margin-right: ${theme.sizes.xlarge};
       font-size: ${theme.sizes.medium};
       margin: ${theme.sizes.xlarge};
+      transform: ${isOpen ? 'translateY(0)' : 'translateY(3rem)'};
+      transition: transform ${theme.transition.default};
     }
   `}
 `
