@@ -1,6 +1,6 @@
 export default {
   border: {
-    smallRadio: '.4rem'
+    smallRadio: '0.236rem'
   },
   fonts: {
     karla:
@@ -18,6 +18,7 @@ export default {
     white: '#A2C5E5'
   },
   sizes: {
+    xxsmall: '0.236rem',
     xsmall: '.618rem',
     small: '1rem',
     medium: '1.618rem',

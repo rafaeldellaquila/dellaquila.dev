@@ -16,7 +16,27 @@ export const MenuNav = styled.nav`
     display: flex;
     justify-content: flex-end;
     a {
+      position: relative;
       margin-left: ${theme.sizes.xxlarge};
+      &:hover {
+        &::after {
+          content: '';
+          position: absolute;
+          display: block;
+          height: ${theme.sizes.xxsmall};
+          background-color: ${theme.colors.lightSecondary};
+          animation: hoverAnimation 0.3s forwards;
+        }
+          @keyframes hoverAnimation {
+            from {
+              width: 0;
+              left: 50%;
+            }
+            to {
+              width: 100%;
+              left: 0;
+            }
+          }
     }
   `}
 `
