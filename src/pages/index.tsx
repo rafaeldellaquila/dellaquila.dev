@@ -1,27 +1,5 @@
-import ColorGraph from 'components/ColorGraph'
-import Main from 'components/Main'
+import Home from 'templates/Home'
 
-export default function Home() {
-  return (
-    <>
-      <ColorGraph />
-      <Main />
-      <Main />
-      <Main />
-      <Main />
-      <Main />
-      <Main />
-      <Main />
-      <Main />
-      <Main />
-      <Main />
-      <Main />
-      <Main />
-      <Main />
-      <Main />
-      <Main />
-      <Main />
-      <ColorGraph />
-    </>
-  )
+export default function HomePage() {
+  return <Home />
 }
