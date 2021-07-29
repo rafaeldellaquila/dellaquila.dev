@@ -1,0 +1,133 @@
+const HeaderIllustration = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 582 206">
+    <rect
+      width="201.806"
+      height="15.433"
+      x="380.194"
+      y="125.867"
+      fill="#F27613"
+      rx="4"
+    />
+    <rect width="338.836" height="15.032" y="126.267" fill="#A2C5E5" rx="4" />
+    <rect
+      width="31.676"
+      height="15.433"
+      x="550.324"
+      y="31.467"
+      fill="#0A72CF"
+      rx="4"
+    />
+    <rect width="157.459" height="16.034" y="31.066" fill="#F27613" rx="4" />
+    <rect
+      width="350.795"
+      height="16.034"
+      x="182.373"
+      y="31.066"
+      fill="#A2C5E5"
+      rx="4"
+    />
+    <rect
+      width="120.797"
+      height="15.433"
+      x="436.68"
+      y="62.934"
+      fill="#E53D1E"
+      rx="4"
+    />
+    <rect
+      width="132.545"
+      height="15.032"
+      x="41.856"
+      y="63.134"
+      fill="#E53D1E"
+      rx="4"
+    />
+    <rect
+      width="202.305"
+      height="15.032"
+      x="208.284"
+      y="63.134"
+      fill="#0A72CF"
+      rx="4"
+    />
+    <rect
+      width="37.52"
+      height="15.433"
+      x="132.183"
+      y="94.4"
+      fill="#0A72CF"
+      rx="4"
+    />
+    <rect
+      width="97.806"
+      height="15.433"
+      x="207.796"
+      y="94.4"
+      fill="#E53D1E"
+      rx="4"
+    />
+    <rect width="85.404" height="15.433" y="94.4" fill="#E53D1E" rx="4" />
+    <rect
+      width="200.312"
+      height="16.034"
+      x="338.836"
+      y="94.2"
+      fill="#0A72CF"
+      rx="4"
+    />
+    <rect
+      width="130.791"
+      height="15.433"
+      x="242.25"
+      y="189.567"
+      fill="#F27613"
+      rx="4"
+    />
+    <rect
+      width="110.62"
+      height="16.034"
+      x="451.449"
+      y="189.402"
+      fill="#0A72CF"
+      rx="4"
+    />
+    <rect
+      width="118.443"
+      height="15.433"
+      x="34.4"
+      y="189.517"
+      fill="#0A72CF"
+      rx="4"
+    />
+    <rect
+      width="95.671"
+      height="15.032"
+      x="295.983"
+      y="158.336"
+      fill="#A2C5E5"
+      rx="4"
+    />
+    <rect width="68.799" height="15.433" y="157.334" fill="#F27613" rx="4" />
+    <rect
+      width="186.36"
+      height="15.032"
+      x="91.685"
+      y="158.336"
+      fill="#E53D1E"
+      rx="4"
+    />
+    <rect
+      width="173.404"
+      height="15.032"
+      x="408.596"
+      y="158.336"
+      fill="#0A72CF"
+      rx="4"
+    />
+    <rect width="49.787" height="15.433" fill="#A2C5E5" rx="4" />
+    <rect width="232.543" height="15.433" x="106.268" fill="#F27613" rx="4" />
+    <rect width="87.875" height="15.433" x="439.969" fill="#0A72CF" rx="4" />
+  </svg>
+)
+
+export default HeaderIllustration
