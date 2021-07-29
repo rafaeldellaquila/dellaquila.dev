@@ -12,6 +12,15 @@ export const Wrapper = styled.main`
 
       line-height: 0.9;
       margin-bottom: ${theme.sizes.large};
+      &::before {
+        content: ' ';
+        display: block;
+        background-color: ${theme.colors.lightPrimary};
+        height: ${theme.sizes.small};
+        width: 25%;
+        border-radius: ${theme.border.smallRadio};
+        margin-bottom: ${theme.sizes.xxlarge};
+      }
     }
     h2 {
       font-family: ${theme.fonts.karla};
@@ -25,6 +34,7 @@ export const Wrapper = styled.main`
       color: ${theme.colors.white};
     }
     ${media.lessThan('medium')`
+    max-width: 480px;
     h1 {
       font-size: ${theme.sizes.xlarge};
     }
