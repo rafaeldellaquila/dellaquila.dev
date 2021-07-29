@@ -18,7 +18,7 @@ export default {
     white: '#A2C5E5'
   },
   sizes: {
-    xxsmall: '0.236rem',
+    xxsmall: '.382rem',
     xsmall: '.618rem',
     small: '1rem',
     medium: '1.618rem',
