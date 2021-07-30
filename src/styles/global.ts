@@ -43,6 +43,7 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    list-style: none;
   }
 
   ${({ theme }) => css`
@@ -54,6 +55,10 @@ const GlobalStyles = createGlobalStyle`
       font-family: ${theme.fonts.karla};
       font-size: ${theme.sizes.medium};
       background-color: ${theme.colors.secondary};
+
+      #__next {
+        position: absolute;
+      }
       a {
         color: inherit;
         text-decoration: none;
