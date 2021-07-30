@@ -1,8 +1,9 @@
 import media from 'styled-media-query'
 import styled, { css } from 'styled-components'
 
-export const Wrapper = styled.main`
+export const Wrapper = styled.div`
   ${({ theme }) => css`
+    width: 100%;
     max-width: 780px;
     h1 {
       color: ${theme.colors.primary};

@@ -1,5 +1,10 @@
 const HeaderIllustration = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 582 206">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 582 206"
+    aria-label="illustração simulando um bloco de códigos coloridos"
+  >
     <rect
       width="201.806"
       height="15.433"
