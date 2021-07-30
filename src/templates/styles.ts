@@ -28,7 +28,19 @@ export const HeaderSection = styled.section`
     }
 
     ${media.lessThan('medium')`
-    margin: 0 ${theme.sizes.huge} ${theme.sizes.huge} ${theme.sizes.huge};
+    margin: 0 ${theme.sizes.xlarge} ${theme.sizes.huge} ${theme.sizes.xxlarge};
+    `}
+  `}
+`
+
+export const AboutMeSection = styled.section`
+  ${({ theme }) => css`
+    display: flex;
+    justify-content: center;
+    margin: ${theme.sizes.xhuge} ${theme.sizes.xxhuge};
+    ${media.lessThan('medium')`
+    flex-direction: column;
+    margin: ${theme.sizes.huge} ${theme.sizes.xlarge};
     `}
   `}
 `
