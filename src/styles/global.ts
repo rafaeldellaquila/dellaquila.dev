@@ -56,9 +56,6 @@ const GlobalStyles = createGlobalStyle`
       font-size: ${theme.sizes.medium};
       background-color: ${theme.colors.secondary};
 
-      #__next {
-        position: absolute;
-      }
       a {
         color: inherit;
         text-decoration: none;

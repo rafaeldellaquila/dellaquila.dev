@@ -12,16 +12,15 @@ export const NavSection = styled.section`
 export const HeaderSection = styled.section`
   ${({ theme }) => css`
     display: flex;
-    justify-content: space-between;
-
+    justify-content: center;
     margin: 0 ${theme.sizes.xhuge} ${theme.sizes.xhuge} ${theme.sizes.xhuge};
+
     svg {
       max-width: 582px;
       margin-left: ${theme.sizes.huge};
     }
 
     @media (max-width: 1700px) {
-      justify-content: center;
       svg {
         display: none;
       }
@@ -40,6 +39,7 @@ export const AboutMeSection = styled.section`
     margin: ${theme.sizes.xhuge} ${theme.sizes.xxhuge};
     ${media.lessThan('medium')`
     flex-direction: column;
+    margin: 0;
     margin: ${theme.sizes.huge} ${theme.sizes.xlarge};
     `}
   `}

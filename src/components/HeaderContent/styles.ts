@@ -10,7 +10,6 @@ export const Wrapper = styled.div`
       font-family: ${theme.fonts.plex};
       font-weight: ${theme.fonts.bold};
       font-size: ${theme.sizes.huge};
-
       line-height: 0.9;
       margin-bottom: ${theme.sizes.large};
       &::before {
@@ -33,6 +32,8 @@ export const Wrapper = styled.div`
     p {
       font-size: ${theme.sizes.large};
       color: ${theme.colors.white};
+      line-height: 1.5;
+      line-break: loose;
     }
     ${media.lessThan('medium')`
     max-width: 480px;
