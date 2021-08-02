@@ -6,21 +6,36 @@ import HeaderContent from 'components/HeaderContent'
 import HeaderIllustration from 'components/HeaderIllustration'
 import SocialIcons from 'components/SocialIcons'
 import AboutMeContent from 'components/AboutMeContent'
+
 export default function Home() {
+  const scrollTo = (event: React.MouseEvent<HTMLElement>) => {
+    event.preventDefault()
+    const href = event.currentTarget?.getAttribute('href')
+    if (href) {
+      const sectionScroll = document.querySelector<HTMLElement>(href)
+      sectionScroll?.scrollIntoView({
+        block: 'center',
+        behavior: 'smooth'
+      })
+    }
+  }
+
   return (
     <>
       <ColorGraph />
       <S.NavSection>
-        <NavMenu />
+        <NavMenu scrollTo={scrollTo} />
       </S.NavSection>
       <S.HeaderSection>
         <HeaderContent />
         <HeaderIllustration />
       </S.HeaderSection>
       <SocialIcons />
-      <S.AboutMeSection>
+
+      <S.AboutMeSection id="about-me">
         <AboutMeContent />
       </S.AboutMeSection>
+
       <ColorGraph />
     </>
   )

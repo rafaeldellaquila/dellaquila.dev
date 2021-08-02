@@ -28,7 +28,7 @@ export const ContentWrapper = styled.div`
     display: inline;
     h1 {
       color: ${theme.colors.primary};
-      font-size: ${theme.sizes.xlarge};
+      font-size: ${theme.sizes.large};
       text-transform: uppercase;
       font-weight: ${theme.fonts.bold};
       margin-bottom: ${theme.sizes.large};
@@ -38,9 +38,10 @@ export const ContentWrapper = styled.div`
     }
     p {
       color: ${theme.colors.white};
-      font-size: ${theme.sizes.large};
+      font-size: ${theme.sizes.medium};
       line-height: 1.5;
       line-break: loose;
+      max-width: 600px;
       span {
         color: ${theme.colors.lightPrimary};
       }
@@ -49,9 +50,8 @@ export const ContentWrapper = styled.div`
     h1 {
       font-size: ${theme.sizes.medium};
     }
-
     p {
-      font-size: ${theme.sizes.medium};
+      max-width: 300px;
     }
     `}
   `}

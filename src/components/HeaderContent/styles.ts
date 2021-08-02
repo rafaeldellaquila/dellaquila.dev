@@ -9,15 +9,15 @@ export const Wrapper = styled.div`
       color: ${theme.colors.primary};
       font-family: ${theme.fonts.plex};
       font-weight: ${theme.fonts.bold};
-      font-size: ${theme.sizes.huge};
+      font-size: ${theme.sizes.xxlarge};
       line-height: 0.9;
       margin-bottom: ${theme.sizes.large};
       &::before {
         content: ' ';
         display: block;
         background-color: ${theme.colors.lightPrimary};
-        height: ${theme.sizes.small};
-        width: 25%;
+        height: ${theme.sizes.xsmall};
+        width: 15%;
         border-radius: ${theme.border.smallRadio};
         margin-bottom: ${theme.sizes.xxlarge};
       }
@@ -25,26 +25,21 @@ export const Wrapper = styled.div`
     h2 {
       font-family: ${theme.fonts.karla};
       font-weight: ${theme.fonts.bold};
-      font-size: ${theme.sizes.large};
+      font-size: ${theme.sizes.medium};
       color: ${theme.colors.lightPrimary};
       margin-bottom: ${theme.sizes.large};
     }
     p {
-      font-size: ${theme.sizes.large};
+      font-size: ${theme.sizes.medium};
       color: ${theme.colors.white};
       line-height: 1.5;
       line-break: loose;
+      max-width: 500px;
     }
     ${media.lessThan('medium')`
     max-width: 480px;
     h1 {
       font-size: ${theme.sizes.xlarge};
-    }
-    h2 {
-      font-size: ${theme.sizes.medium};
-    }
-    p {
-      font-size: ${theme.sizes.medium};
     }
     `}
   `}
