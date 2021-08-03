@@ -26,13 +26,7 @@ export const SideWrapper = styled.div`
 export const ContentWrapper = styled.div`
   ${({ theme }) => css`
     display: inline;
-    h1 {
-      color: ${theme.colors.primary};
-      font-size: ${theme.sizes.large};
-      text-transform: uppercase;
-      font-weight: ${theme.fonts.bold};
-      margin-bottom: ${theme.sizes.large};
-    }
+
     .first {
       margin-bottom: ${theme.sizes.large};
     }
@@ -47,9 +41,6 @@ export const ContentWrapper = styled.div`
       }
     }
     ${media.lessThan('medium')`
-    h1 {
-      font-size: ${theme.sizes.medium};
-    }
     p {
       max-width: 300px;
     }

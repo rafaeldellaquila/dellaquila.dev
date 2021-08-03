@@ -1,5 +1,6 @@
 import Avatar from 'components/Avatar'
 import Button from 'components/Button'
+import Title from 'components/Title'
 import * as S from './styles'
 
 const AboutMeContent = () => (
@@ -17,7 +18,7 @@ const AboutMeContent = () => (
       </Button>
     </S.SideWrapper>
     <S.ContentWrapper>
-      <h1>About me</h1>
+      <Title text={'About me'} />
       <p className="first">
         Hi! My name is Rafael, <span>nice to meet you</span>! I’ve been in Art
         Direction since 2013 and I enjoy designing great ideas. My interest in
