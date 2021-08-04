@@ -28,7 +28,7 @@ const NavMenu = ({ scrollTo }: NavMenuProps) => {
             <a href="#my-work" onClick={scrollTo}>
               Work
             </a>
-            <a href="#" onClick={scrollTo}>
+            <a href="#contact" onClick={scrollTo}>
               Contact
             </a>
           </div>

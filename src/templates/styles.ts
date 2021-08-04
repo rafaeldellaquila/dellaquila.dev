@@ -59,3 +59,9 @@ export const MyWorkSection = styled.section`
     `}
   `}
 `
+
+export const ContactSection = styled.section`
+  ${({ theme }) => css`
+    margin-bottom: ${theme.sizes.xhuge};
+  `}
+`

@@ -7,6 +7,7 @@ import HeaderIllustration from 'components/HeaderIllustration'
 import SocialIcons from 'components/SocialIcons'
 import AboutMeContent from 'components/AboutMeContent'
 import MyWorkGithub from 'components/MyWorkGithub'
+import Contact from 'components/Contact'
 
 export default function Home() {
   const scrollTo = (event: React.MouseEvent<HTMLElement>) => {
@@ -43,7 +44,9 @@ export default function Home() {
       <S.MyWorkSection id="my-work">
         <MyWorkGithub />
       </S.MyWorkSection>
-
+      <S.ContactSection id="contact">
+        <Contact />
+      </S.ContactSection>
       <ColorGraph />
     </>
   )
