@@ -6,6 +6,7 @@ import HeaderContent from 'components/HeaderContent'
 import HeaderIllustration from 'components/HeaderIllustration'
 import SocialIcons from 'components/SocialIcons'
 import AboutMeContent from 'components/AboutMeContent'
+import MyWorkGithub from 'components/MyWorkGithub'
 
 export default function Home() {
   const scrollTo = (event: React.MouseEvent<HTMLElement>) => {
@@ -23,18 +24,25 @@ export default function Home() {
   return (
     <>
       <ColorGraph />
+
       <S.NavSection>
         <NavMenu scrollTo={scrollTo} />
       </S.NavSection>
+
       <S.HeaderSection>
         <HeaderContent />
         <HeaderIllustration />
       </S.HeaderSection>
+
       <SocialIcons />
 
       <S.AboutMeSection id="about-me">
         <AboutMeContent />
       </S.AboutMeSection>
+
+      <S.MyWorkSection>
+        <MyWorkGithub />
+      </S.MyWorkSection>
 
       <ColorGraph />
     </>

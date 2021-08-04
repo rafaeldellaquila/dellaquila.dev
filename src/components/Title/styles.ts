@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
-export const Title = styled.h1`
+export const Title = styled.h2`
   ${({ theme }) => css`
     color: ${theme.colors.primary};
     font-size: ${theme.sizes.large};
