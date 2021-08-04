@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components'
 type MenuOverlayProps = {
   isOpen: boolean
 }
+
 export const Wrapper = styled.menu`
   ${({ theme }) => css`
     color: ${theme.colors.white};
@@ -16,9 +17,11 @@ export const MenuNav = styled.nav`
   ${({ theme }) => css`
     display: flex;
     justify-content: flex-end;
+
     a {
       position: relative;
       margin-left: ${theme.sizes.xxlarge};
+
       &:hover {
         &::after {
           content: '';
@@ -28,6 +31,7 @@ export const MenuNav = styled.nav`
           background-color: ${theme.colors.lightSecondary};
           animation: hoverAnimation 0.3s forwards;
         }
+
           @keyframes hoverAnimation {
             from {
               width: 0;
@@ -41,11 +45,13 @@ export const MenuNav = styled.nav`
     }
   `}
 `
+
 export const IconWrapper = styled.div`
   ${({ theme }) => css`
     cursor: pointer;
     display: flex;
     justify-content: flex-end;
+
     > svg {
       width: ${theme.sizes.xlarge};
     }
@@ -69,6 +75,7 @@ export const MenuOverlay = styled.nav<MenuOverlayProps>`
     pointer-events: ${isOpen ? 'all' : 'none'};
     transition: opacity ${theme.transition.default};
     padding-top: ${theme.sizes.huge};
+
     > svg {
       width: ${theme.sizes.xlarge};
       position: absolute;
@@ -76,6 +83,7 @@ export const MenuOverlay = styled.nav<MenuOverlayProps>`
       right: 0;
       margin: ${theme.sizes.xlarge};
     }
+
     a {
       margin-right: ${theme.sizes.xlarge};
       font-size: ${theme.sizes.medium};

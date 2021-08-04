@@ -1,4 +1,4 @@
-import { MouseEvent, useState } from 'react'
+import { useState } from 'react'
 import * as S from './styles'
 import { MenuOutline as MenuIcon } from '@styled-icons/evaicons-outline'
 import { CloseOutline as CloseIcon } from '@styled-icons/evaicons-outline'
@@ -13,7 +13,7 @@ const NavMenu = ({ scrollTo }: NavMenuProps) => {
 
   return (
     <S.Wrapper>
-      <MediaMatch lessThan="medium">
+      <MediaMatch lessThan="small">
         <S.IconWrapper onClick={() => setIsOpen(true)}>
           <MenuIcon aria-label="open menu" />
         </S.IconWrapper>
@@ -25,7 +25,7 @@ const NavMenu = ({ scrollTo }: NavMenuProps) => {
             <a href="#about-me" onClick={scrollTo}>
               About Me
             </a>
-            <a href="#" onClick={scrollTo}>
+            <a href="#my-work" onClick={scrollTo}>
               Work
             </a>
             <a href="#" onClick={scrollTo}>

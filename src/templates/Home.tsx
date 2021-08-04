@@ -40,7 +40,7 @@ export default function Home() {
         <AboutMeContent />
       </S.AboutMeSection>
 
-      <S.MyWorkSection>
+      <S.MyWorkSection id="my-work">
         <MyWorkGithub />
       </S.MyWorkSection>
 
