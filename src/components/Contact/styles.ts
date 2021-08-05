@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-
+import media from 'styled-media-query'
 export const Wrapper = styled.div`
   ${({ theme }) => css`
     text-align: center;
@@ -8,7 +8,11 @@ export const Wrapper = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
+      ${media.lessThan('small')`
+        flex-direction: column;
+    `}
     }
+
 
     h3 {
       font-size: ${theme.sizes.large};
@@ -16,19 +20,35 @@ export const Wrapper = styled.div`
       text-transform: uppercase;
       max-width: 240px;
       text-align: left;
+
+      ${media.lessThan('small')`
+      margin-bottom: ${theme.sizes.medium};
+      text-align: center;
+    `}
     }
 
     table {
       color: ${theme.colors.white};
       display: flex;
       flex-direction: column;
-
+      ${media.lessThan('small')`
+            align-items: center;
+          `}
       tr:nth-child(1) {
         margin-bottom: ${theme.sizes.medium};
       }
 
       tr:nth-child(2) {
         margin-bottom: ${theme.sizes.large};
+      }
+      tr:nth-child(3) {
+        div {
+          ${media.lessThan('small')`
+            display: flex;
+            flex-direction: row;
+            margin-left: ${theme.sizes.large};
+          `}
+        }
       }
 
       th {

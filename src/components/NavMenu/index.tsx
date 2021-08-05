@@ -39,8 +39,8 @@ const NavMenu = ({ scrollTo }: NavMenuProps) => {
         <S.MenuOverlay aria-hidden={!isOpen} isOpen={isOpen}>
           <CloseIcon aria-label="close-menu" onClick={() => setIsOpen(false)} />
           <a href="#about-me">About Me</a>
-          <a href="#">Work</a>
-          <a href="#">Contact</a>
+          <a href="#my-work">Work</a>
+          <a href="#contact">Contact</a>
         </S.MenuOverlay>
       </MediaMatch>
     </S.Wrapper>
