@@ -19,6 +19,7 @@ export const SideWrapper = styled.div`
       width: ${theme.sizes.xxhuge};
       min-width: 300px;
     }
+
     button {
       margin-top: ${theme.sizes.xlarge};
       align-self: center;
@@ -39,10 +40,10 @@ export const ContentWrapper = styled.div`
 
     p {
       color: ${theme.colors.white};
-      font-size: ${theme.sizes.medium};
+      font-size: ${theme.sizes.large};
       line-height: 1.5;
       line-break: loose;
-      max-width: 600px;
+      max-width: 780px;
 
       span {
         color: ${theme.colors.lightPrimary};
@@ -52,6 +53,7 @@ export const ContentWrapper = styled.div`
     ${media.lessThan('medium')`
     align-items: center;
     p {
+      font-size: ${theme.sizes.medium};
       max-width: 500px;
     }
     `}

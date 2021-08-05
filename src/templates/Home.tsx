@@ -44,9 +44,11 @@ export default function Home() {
       <S.MyWorkSection id="my-work">
         <MyWorkGithub />
       </S.MyWorkSection>
+
       <S.ContactSection id="contact">
         <Contact />
       </S.ContactSection>
+
       <ColorGraph />
     </>
   )

@@ -37,10 +37,12 @@ export const AboutMeSection = styled.section`
   ${({ theme }) => css`
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     margin: ${theme.sizes.xhuge} ${theme.sizes.xxhuge};
     ${media.lessThan('medium')`
     flex-direction: column;
-    margin: 0;
+    align-items: center;
+
     margin: ${theme.sizes.huge} ${theme.sizes.xlarge};
     `}
   `}

@@ -28,17 +28,17 @@ export const Wrapper = styled.div`
     h2 {
       font-family: ${theme.fonts.karla};
       font-weight: ${theme.fonts.bold};
-      font-size: ${theme.sizes.medium};
+      font-size: ${theme.sizes.large};
       color: ${theme.colors.lightPrimary};
       margin-bottom: ${theme.sizes.large};
     }
 
     p {
-      font-size: ${theme.sizes.medium};
+      font-size: ${theme.sizes.large};
       color: ${theme.colors.white};
       line-height: 1.5;
       line-break: loose;
-      max-width: 500px;
+      max-width: 660px;
     }
 
     ${media.lessThan('medium')`
@@ -46,6 +46,11 @@ export const Wrapper = styled.div`
     h1 {
       font-size: ${theme.sizes.xlarge};
     }
+    h2 {
+      font-size: ${theme.sizes.medium};
+    }
+    p {
+      font-size: ${theme.sizes.medium};
     `}
 
     @media(max-width: 322px) {

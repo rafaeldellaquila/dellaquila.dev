@@ -1,9 +1,10 @@
 import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
+
 export const Title = styled.h2`
   ${({ theme }) => css`
     color: ${theme.colors.primary};
-    font-size: ${theme.sizes.large};
+    font-size: ${theme.sizes.xlarge};
     text-transform: uppercase;
     font-weight: ${theme.fonts.bold};
     margin-bottom: ${theme.sizes.large};
@@ -14,8 +15,7 @@ export const Title = styled.h2`
     }
 
     ${media.lessThan('medium')`
-    h1 {
-      font-size: ${theme.sizes.medium};
-    }`}
+      font-size: ${theme.sizes.large};
+    `}
   `}
 `
