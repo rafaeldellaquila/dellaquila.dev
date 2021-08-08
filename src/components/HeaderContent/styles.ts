@@ -45,6 +45,7 @@ export const Wrapper = styled.div`
     max-width: 480px;
     h1 {
       font-size: ${theme.sizes.xlarge};
+
     }
     h2 {
       font-size: ${theme.sizes.medium};

@@ -1,4 +1,6 @@
 import { useEffect } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 import * as S from './styles'
 
 import ColorGraph from 'components/ColorGraph'
@@ -24,10 +26,8 @@ export default function Home() {
   }
 
   useEffect(() => {
-    const sections = document.querySelector('section')
-    console.log(sections)
+    AOS.init()
   }, [])
-
   return (
     <>
       <ColorGraph />
@@ -36,22 +36,22 @@ export default function Home() {
         <NavMenu scrollTo={scrollTo} />
       </S.NavSection>
 
-      <S.HeaderSection>
+      <S.HeaderSection data-aos="fade-up">
         <HeaderContent />
         <HeaderIllustration />
       </S.HeaderSection>
 
-      <SocialIcons />
+      <SocialIcons data-aos="fade-up" />
 
-      <S.AboutMeSection id="about-me">
+      <S.AboutMeSection id="about-me" data-aos="fade-up">
         <AboutMeContent />
       </S.AboutMeSection>
 
-      <S.MyWorkSection id="my-work">
+      <S.MyWorkSection id="my-work" data-aos="fade-up">
         <MyWorkGithub />
       </S.MyWorkSection>
 
-      <S.ContactSection id="contact">
+      <S.ContactSection id="contact" data-aos="fade-up">
         <Contact />
       </S.ContactSection>
 

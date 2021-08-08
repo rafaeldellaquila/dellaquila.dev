@@ -43,7 +43,6 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    list-style: none;
   }
 
   ${({ theme }) => css`
@@ -61,7 +60,26 @@ const GlobalStyles = createGlobalStyle`
         color: inherit;
         text-decoration: none;
       }
+
+      h1,
+      h2,
+      span {
+        ::selection {
+          background-color: ${theme.colors.white};
+        }
+      }
+
+      a,
+      p,
+      li,
+      h3,
+      h4 {
+        ::selection {
+          background-color: ${theme.colors.primary};
+        }
+      }
     }
+
     @keyframes hoverAnimation {
       from {
         width: 0;
