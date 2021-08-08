@@ -1,5 +1,6 @@
-import { useState } from 'react'
 import * as S from './styles'
+import { useState } from 'react'
+
 import { MenuOutline as MenuIcon } from '@styled-icons/evaicons-outline'
 import { CloseOutline as CloseIcon } from '@styled-icons/evaicons-outline'
 import MediaMatch from 'components/MediaMatch'

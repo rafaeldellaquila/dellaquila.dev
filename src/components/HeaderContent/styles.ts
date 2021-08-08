@@ -43,13 +43,16 @@ export const Wrapper = styled.div`
 
     ${media.lessThan('medium')`
     max-width: 480px;
+
     h1 {
       font-size: ${theme.sizes.xlarge};
 
     }
+
     h2 {
       font-size: ${theme.sizes.medium};
     }
+
     p {
       font-size: ${theme.sizes.medium};
     `}

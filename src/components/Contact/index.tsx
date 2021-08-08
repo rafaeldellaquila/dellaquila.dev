@@ -1,6 +1,7 @@
+import * as S from './styles'
+
 import SocialIcons from 'components/SocialIcons'
 import Title from 'components/Title'
-import * as S from './styles'
 
 const Contact = () => (
   <S.Wrapper>
@@ -13,6 +14,7 @@ const Contact = () => (
         <a className="email" href="mailto:rafadellaquila@gmail.com">
           rafadellaquila@gmail.com
         </a>
+
         <SocialIcons withBefore={false} />
       </div>
     </div>

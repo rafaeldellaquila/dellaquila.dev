@@ -10,5 +10,8 @@ module.exports = withPWA({
   reactStrictMode: true,
   eslint: {
     dirs: ['src/**/*']
+  },
+  images: {
+    domains: ['firebasestorage.googleapis.com']
   }
 })

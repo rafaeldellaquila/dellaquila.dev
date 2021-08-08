@@ -12,6 +12,7 @@ export const Wrapper = styled.button`
     padding: ${theme.sizes.medium} ${theme.sizes.xlarge};
     cursor: pointer;
     transition: 0.5s;
+
     &:hover,
     &:focus {
       color: ${theme.colors.secondary};

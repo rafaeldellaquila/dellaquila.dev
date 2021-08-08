@@ -1,4 +1,5 @@
 import * as S from './styles'
+
 import CardComponent from 'components/CardComponent'
 import HighLightCard from 'components/HighLightCard'
 import Title from 'components/Title'

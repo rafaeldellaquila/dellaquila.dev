@@ -18,6 +18,7 @@ export const SideWrapper = styled.div`
     img {
       width: ${theme.sizes.xxhuge};
       min-width: 300px;
+      max-width: 600px;
     }
 
     button {
@@ -52,6 +53,7 @@ export const ContentWrapper = styled.div`
 
     ${media.lessThan('medium')`
     align-items: center;
+
     p {
       font-size: ${theme.sizes.medium};
       max-width: 500px;

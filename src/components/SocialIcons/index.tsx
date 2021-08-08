@@ -1,4 +1,5 @@
 import * as S from './styles'
+
 import { Instagram as InstagramIcon } from '@styled-icons/entypo-social/Instagram'
 import { Github as GithubIcon } from '@styled-icons/entypo-social/Github'
 import { Linkedin as LinkedinIcon } from '@styled-icons/entypo-social/Linkedin'

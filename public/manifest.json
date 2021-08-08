@@ -1,9 +1,16 @@
 {
-  "name": "Boilerplate do Rafa",
-  "short_name": "Boilerplate",
-  "background_color": "#00001b",
-  "description": "Boilerplate utilizando Typescript, React, NextJS e Styled Components!",
-  "display": "fullscreen",
   "start_url": "/",
-  "theme_color": "#00001b"
+  "name": "Rafael Dell'Aquila Front-end Dev",
+  "short_name": "Rafael - Front-end Dev",
+  "background_color": "#00001b",
+  "description": "My personal site for my new projects",
+  "display": "fullscreen",
+  "theme_color": "#00001b",
+  "icons":[
+      {
+        "src": "/images/favicon.png",
+        "sizes": "16x16",
+        "type": "image/png"
+      }
+]
 }

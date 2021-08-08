@@ -1,7 +1,8 @@
+import * as S from './styles'
+
 import Avatar from 'components/Avatar'
 import Button from 'components/Button'
 import Title from 'components/Title'
-import * as S from './styles'
 
 const AboutMeContent = () => (
   <>

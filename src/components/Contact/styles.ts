@@ -66,6 +66,7 @@ export const Wrapper = styled.div`
         }
 `}
       }
+
       .social-icons {
         display: flex;
         flex-direction: row;
