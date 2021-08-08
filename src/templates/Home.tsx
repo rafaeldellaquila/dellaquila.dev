@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import * as S from './styles'
 
 import ColorGraph from 'components/ColorGraph'
@@ -21,6 +22,11 @@ export default function Home() {
       })
     }
   }
+
+  useEffect(() => {
+    const sections = document.querySelector('section')
+    console.log(sections)
+  }, [])
 
   return (
     <>

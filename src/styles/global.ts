@@ -62,6 +62,16 @@ const GlobalStyles = createGlobalStyle`
         text-decoration: none;
       }
     }
+    @keyframes hoverAnimation {
+      from {
+        width: 0;
+        left: 50%;
+      }
+      to {
+        width: 100%;
+        left: 0;
+      }
+    }
   `}
 `
 

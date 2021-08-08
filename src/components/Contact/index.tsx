@@ -7,23 +7,14 @@ const Contact = () => (
     <Title text="Contact me" />
     <div>
       <h3>Do you want to do a project with me?</h3>
-      <table>
-        <tr>
-          <th>E-mail</th>
-        </tr>
-        <tr>
-          <td>
-            <a href="mailto:rafadellaquila@gmail.com">
-              rafadellaquila@gmail.com
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <SocialIcons withBefore={false} />
-          </td>
-        </tr>
-      </table>
+      <div className="description">
+        <h4>E-mail</h4>
+
+        <a className="email" href="mailto:rafadellaquila@gmail.com">
+          rafadellaquila@gmail.com
+        </a>
+        <SocialIcons withBefore={false} />
+      </div>
     </div>
   </S.Wrapper>
 )

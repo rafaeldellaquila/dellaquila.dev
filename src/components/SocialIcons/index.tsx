@@ -9,7 +9,7 @@ export type SocialIconsProps = {
 }
 
 const SocialIcons = ({ withBefore = true }: SocialIconsProps) => (
-  <S.Wrapper withBefore={withBefore}>
+  <S.Wrapper withBefore={withBefore} className="social-icons">
     <a
       href="https://github.com/rafaeldellaquila"
       target="_blank"

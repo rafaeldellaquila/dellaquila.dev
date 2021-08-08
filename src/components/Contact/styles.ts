@@ -8,11 +8,11 @@ export const Wrapper = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
-      ${media.lessThan('small')`
-        flex-direction: column;
-    `}
-    }
 
+      ${media.lessThan('medium')`
+      flex-direction: column;
+      `}
+    }
 
     h3 {
       font-size: ${theme.sizes.large};
@@ -21,71 +21,60 @@ export const Wrapper = styled.div`
       max-width: 240px;
       text-align: left;
 
-      ${media.lessThan('small')`
+      ${media.lessThan('medium')`
       margin-bottom: ${theme.sizes.medium};
       text-align: center;
     `}
     }
 
-    table {
+    .description {
       color: ${theme.colors.white};
       display: flex;
       flex-direction: column;
-      ${media.lessThan('small')`
-            align-items: center;
-          `}
-      tr:nth-child(1) {
-        margin-bottom: ${theme.sizes.medium};
-      }
+      align-items: flex-start;
 
-      tr:nth-child(2) {
-        margin-bottom: ${theme.sizes.large};
-      }
-      tr:nth-child(3) {
-        div {
-          ${media.lessThan('small')`
-            display: flex;
-            flex-direction: row;
-            margin-left: ${theme.sizes.large};
-          `}
-        }
-      }
-
-      th {
+      h4 {
         font-size: ${theme.sizes.medium};
         font-family: ${theme.fonts.plex};
         text-transform: uppercase;
+
+        ${media.lessThan('medium')`
+        align-self: center;
+        `}
       }
 
-      td {
+      .email {
+        position: relative;
+        margin-bottom: ${theme.sizes.large};
         font-size: ${theme.sizes.large};
-        font-family: ${theme.fonts.karla};
 
-        > a {
-          position: relative;
+        ${media.lessThan('small')`
+        font-size: ${theme.sizes.medium};
+        text-decoration: underline;
+        `}
+
+        ${media.greaterThan('small')`
           &:hover {
             &::after {
-          content: '';
-          position: absolute;
-          display: block;
-          height: ${theme.sizes.xxsmall};
-          background-color: ${theme.colors.white};
-          animation: hoverAnimation 0.3s forwards;
-        }
-
-          @keyframes hoverAnimation {
-            from {
-              width: 0;
-              left: 50%;
+              content: '';
+              position: absolute;
+              display: block;
+              height: ${theme.sizes.xxsmall};
+              background-color: ${theme.colors.white};
+              animation: hoverAnimation 0.3s forwards;
             }
-            to {
-              width: 100%;
-              left: 0;
-            }
-          }
-    }
-          }
         }
+`}
+      }
+      .social-icons {
+        display: flex;
+        flex-direction: row;
+        ${media.lessThan('medium')`
+        align-self: center;
+        a:last-child {
+          margin-right: 0;
+        }
+        `}
       }
     }
   `}
