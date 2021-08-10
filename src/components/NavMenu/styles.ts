@@ -31,6 +31,7 @@ export const MenuNav = styled.nav`
           background-color: ${theme.colors.lightSecondary};
           animation: hoverAnimation 0.3s forwards;
         }
+      }
     }
   `}
 `

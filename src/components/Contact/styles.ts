@@ -65,24 +65,26 @@ export const Wrapper = styled.div`
             }
           }
         `}
-        }
+      }
 
       .social-icons {
-          display: flex;
-          flex-direction: row;
-          ${media.lessThan('medium')`
-        align-self: center;
-        a:last-child {
-          margin-right: 0;
-        }
-        `}
+        display: flex;
+        flex-direction: row;
+        ${media.lessThan('medium')`
+            align-self: center;
+            a:last-child {
+              margin-right: 0;
+            }
+         `}
       }
     }
-      footer {
-        margin:${theme.sizes.xhuge} ${theme.sizes.large} 0 ${theme.sizes.large};
-        color: ${theme.colors.white};
-          .link-me {
-            text-decoration: underline;
-          }
+
+    footer {
+      margin: ${theme.sizes.xhuge} ${theme.sizes.large} 0 ${theme.sizes.large};
+      color: ${theme.colors.white};
+      .link-me {
+        text-decoration: underline;
+      }
+    }
   `}
 `

@@ -14,7 +14,6 @@ const CardComponent: React.FC<Props> = ({ url, name, description }) => (
     <a href={url} target="_blank" rel="noreferrer">
       <div>
         <FolderIcon width="24" />
-
         <StarIcon width="24" />
       </div>
       <h4>{name}</h4>

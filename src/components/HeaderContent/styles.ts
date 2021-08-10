@@ -46,7 +46,6 @@ export const Wrapper = styled.div`
 
     h1 {
       font-size: ${theme.sizes.xlarge};
-
     }
 
     h2 {
@@ -55,6 +54,7 @@ export const Wrapper = styled.div`
 
     p {
       font-size: ${theme.sizes.medium};
+    }
     `}
 
     @media(max-width: 322px) {

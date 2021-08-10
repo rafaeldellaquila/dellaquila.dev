@@ -75,7 +75,7 @@ export const ListWrapper = styled.div`
           flex-direction: row;
       `}
 
-${media.greaterThan('large')`
+    ${media.greaterThan('large')`
           flex-direction: column;
       `}
 
@@ -108,7 +108,6 @@ ${media.greaterThan('large')`
 
         ${media.lessThan('huge')`
           margin-bottom: ${theme.sizes.small};
-
       `}
 
         &:before {
@@ -120,6 +119,7 @@ ${media.greaterThan('large')`
           border-radius: ${theme.border.smallRadio};
           display: inline;
           margin-right: ${theme.sizes.medium};
+
           ${media.lessThan('medium')`margin-right: ${theme.sizes.small};`}
         }
       }

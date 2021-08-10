@@ -39,10 +39,10 @@ export const AboutMeSection = styled.section`
     justify-content: center;
     align-items: flex-start;
     margin: ${theme.sizes.xhuge} ${theme.sizes.xxhuge};
+
     ${media.lessThan('medium')`
     flex-direction: column;
     align-items: center;
-
     margin: ${theme.sizes.huge} ${theme.sizes.xlarge};
     `}
   `}

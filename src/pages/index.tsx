@@ -1,9 +1,10 @@
 import * as S from '../styles/styles'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import { useEffect } from 'react'
 
+import { useEffect } from 'react'
 import { GetStaticProps } from 'next'
+import { QueryProps } from 'types/types'
 
 import ColorGraph from 'components/ColorGraph'
 import NavMenu from 'components/NavMenu'
@@ -15,7 +16,6 @@ import MyWorkGithub from 'components/MyWorkGithub'
 import Contact from 'components/Contact'
 import client from 'graphql/client'
 import query from 'graphql/queries'
-import { QueryProps } from 'types/types'
 
 export default function Home({
   following,
@@ -38,6 +38,7 @@ export default function Home({
   useEffect(() => {
     AOS.init()
   }, [])
+
   return (
     <>
       <ColorGraph />
@@ -58,14 +59,12 @@ export default function Home({
       </S.AboutMeSection>
 
       <S.MyWorkSection id="my-work" data-aos="fade-up">
-        {
-          <MyWorkGithub
-            repositories={repositories}
-            following={following}
-            followers={followers}
-            itemShowcase={itemShowcase}
-          />
-        }
+        <MyWorkGithub
+          repositories={repositories}
+          following={following}
+          followers={followers}
+          itemShowcase={itemShowcase}
+        />
       </S.MyWorkSection>
 
       <S.ContactSection id="contact" data-aos="fade-up">
