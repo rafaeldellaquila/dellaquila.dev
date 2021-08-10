@@ -1,14 +1,86 @@
-import client from 'graphql/client'
-import GET_GITHUB_QUERIES from 'graphql/queries/getGithubQueries'
-import { GetStaticProps } from 'next'
-import Home from 'templates/Home'
+import * as S from '../styles/styles'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react'
 
-export default function HomePage() {
-  return <Home />
+import { GetStaticProps } from 'next'
+
+import ColorGraph from 'components/ColorGraph'
+import NavMenu from 'components/NavMenu'
+import HeaderContent from 'components/HeaderContent'
+import HeaderIllustration from 'components/HeaderIllustration'
+import SocialIcons from 'components/SocialIcons'
+import AboutMeContent from 'components/AboutMeContent'
+import MyWorkGithub from 'components/MyWorkGithub'
+import Contact from 'components/Contact'
+import client from 'graphql/client'
+import query from 'graphql/queries'
+import { QueryProps } from 'types/types'
+
+export default function Home({
+  following,
+  followers,
+  repositories,
+  itemShowcase
+}: QueryProps) {
+  const scrollTo = (event: React.MouseEvent<HTMLElement>) => {
+    event.preventDefault()
+    const href = event.currentTarget?.getAttribute('href')
+    if (href) {
+      const sectionScroll = document.querySelector<HTMLElement>(href)
+      sectionScroll?.scrollIntoView({
+        block: 'center',
+        behavior: 'smooth'
+      })
+    }
+  }
+  const showcase = itemShowcase.items.nodes
+  console.log(showcase)
+  useEffect(() => {
+    AOS.init()
+  }, [])
+  return (
+    <>
+      <ColorGraph />
+
+      <S.NavSection>
+        <NavMenu scrollTo={scrollTo} />
+      </S.NavSection>
+
+      <S.HeaderSection data-aos="fade-up">
+        <HeaderContent />
+        <HeaderIllustration />
+      </S.HeaderSection>
+
+      <SocialIcons data-aos="fade-up" />
+
+      <S.AboutMeSection id="about-me" data-aos="fade-up">
+        <AboutMeContent />
+      </S.AboutMeSection>
+
+      <S.MyWorkSection id="my-work" data-aos="fade-up">
+        {
+          <MyWorkGithub
+            repositories={repositories}
+            following={following}
+            followers={followers}
+            itemShowcase={itemShowcase}
+          />
+        }
+      </S.MyWorkSection>
+
+      <S.ContactSection id="contact" data-aos="fade-up">
+        <Contact />
+      </S.ContactSection>
+
+      <ColorGraph />
+    </>
+  )
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const { viewer } = await client.request(GET_GITHUB_QUERIES)
+  const { viewer } = await client.request(query)
+
   return {
     props: {
       ...viewer

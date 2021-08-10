@@ -1,4 +1,6 @@
-const GET_GITHUB_QUERIES = /* GraphQL */ `
+import { gql } from 'graphql-request'
+
+const query = gql`
   fragment totalFollowing on User {
     following(first: 1) {
       totalCount
@@ -21,14 +23,11 @@ const GET_GITHUB_QUERIES = /* GraphQL */ `
     itemShowcase {
       hasPinnedItems
       items(first: 10) {
-        edges {
-          node {
-            ... on Repository {
-              name
-              description
-              url
-              viewerHasStarred
-            }
+        nodes {
+          ... on Repository {
+            name
+            description
+            url
           }
         }
       }
@@ -44,4 +43,5 @@ const GET_GITHUB_QUERIES = /* GraphQL */ `
     }
   }
 `
-export default GET_GITHUB_QUERIES
+
+export default query

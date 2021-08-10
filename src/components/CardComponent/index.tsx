@@ -3,20 +3,22 @@ import * as S from './styles'
 import { FolderOutline as FolderIcon } from '@styled-icons/evaicons-outline'
 import { StarOutline as StarIcon } from '@styled-icons/evaicons-outline'
 
-const CardComponent = () => (
+type Props = {
+  url: string
+  name: string
+  description: string
+}
+
+const CardComponent: React.FC<Props> = ({ url, name, description }) => (
   <S.Wrapper>
-    <div>
-      <FolderIcon width="24" />
-      <a href="#teste" target="_blank">
+    <a href={url} target="_blank" rel="noreferrer">
+      <div>
+        <FolderIcon width="24" />
+
         <StarIcon width="24" />
-      </a>
-    </div>
-    <a href="#" target="_blank">
-      <h4>Nome do Repositório</h4>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id id
-        donec nisl duis elit in euismod pharetra.
-      </p>
+      </div>
+      <h4>{name}</h4>
+      <p>{description}</p>
     </a>
   </S.Wrapper>
 )
