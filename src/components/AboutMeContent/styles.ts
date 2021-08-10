@@ -108,7 +108,7 @@ ${media.greaterThan('large')`
 
         ${media.lessThan('huge')`
           margin-bottom: ${theme.sizes.small};
-          font-size: ${theme.sizes.small};
+
       `}
 
         &:before {

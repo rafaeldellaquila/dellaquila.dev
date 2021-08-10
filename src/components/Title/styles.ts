@@ -8,9 +8,12 @@ export const Title = styled.h2`
     text-transform: uppercase;
     font-weight: ${theme.fonts.bold};
     margin-bottom: ${theme.sizes.large};
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     svg {
-      width: ${theme.sizes.large};
+      width: ${theme.sizes.xlarge};
       margin-right: ${theme.sizes.medium};
     }
 

@@ -11,10 +11,9 @@ const MyWorkGithub: React.FC<QueryProps> = ({
   repositories,
   itemShowcase
 }) => {
-  console.log(itemShowcase.items.nodes)
   return (
-    <>
-      <Title text="Works" icon={true} />
+    <S.Wrapper>
+      <Title text="My works" icon={true} />
       <S.HighLightWrapper>
         <HighLightCard
           hlNumber={repositories.totalCount}
@@ -39,7 +38,15 @@ const MyWorkGithub: React.FC<QueryProps> = ({
           />
         ))}
       </S.CardWrapper>
-    </>
+      <a
+        href="http://www.github.com/rafaeldellaquila"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="other-link"
+      >
+        And many others...
+      </a>
+    </S.Wrapper>
   )
 }
 

@@ -18,6 +18,18 @@ const Contact = () => (
         <SocialIcons withBefore={false} />
       </div>
     </div>
+    <footer>
+      &#169;&nbsp;
+      <a
+        href="http://github.com/rafaeldellaquila"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="link-me"
+      >
+        made by me
+      </a>
+      &nbsp;with love, Next.js, GraphQL and Styled-components
+    </footer>
   </S.Wrapper>
 )
 

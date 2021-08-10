@@ -34,8 +34,7 @@ export default function Home({
       })
     }
   }
-  const showcase = itemShowcase.items.nodes
-  console.log(showcase)
+
   useEffect(() => {
     AOS.init()
   }, [])

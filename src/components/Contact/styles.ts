@@ -63,14 +63,14 @@ export const Wrapper = styled.div`
               background-color: ${theme.colors.white};
               animation: hoverAnimation 0.3s forwards;
             }
+          }
+        `}
         }
-`}
-      }
 
       .social-icons {
-        display: flex;
-        flex-direction: row;
-        ${media.lessThan('medium')`
+          display: flex;
+          flex-direction: row;
+          ${media.lessThan('medium')`
         align-self: center;
         a:last-child {
           margin-right: 0;
@@ -78,5 +78,11 @@ export const Wrapper = styled.div`
         `}
       }
     }
+      footer {
+        margin:${theme.sizes.xhuge} ${theme.sizes.large} 0 ${theme.sizes.large};
+        color: ${theme.colors.white};
+          .link-me {
+            text-decoration: underline;
+          }
   `}
 `
