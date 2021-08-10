@@ -18,7 +18,7 @@ function App({ Component, pageProps }: AppProps) {
         <link
           rel="icon"
           type="image/png"
-          href="https://firebasestorage.googleapis.com/v0/b/dellaquila-cbdfe.appspot.com/o/favicon.png?alt=media&token=9f6c9abb-cacc-4224-891d-68fb06297d28"
+          href="https://firebasestorage.googleapis.com/v0/b/dellaquila-cbdfe.appspot.com/o/favicon.svg?alt=media&token=573d2ac9-1090-4475-89e2-36372e22f16c"
         />
       </Head>
       <GlobalStyles />
