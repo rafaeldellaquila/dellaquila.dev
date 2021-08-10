@@ -28,8 +28,4 @@ export const CardWrapper = styled.div`
   ${media.greaterThan('large')`
   grid-template-columns: 33% 33% 33%;
     `}
-
-    ${media.greaterThan('huge')`
-  grid-template-columns: 22% 22% 22% 22%;
-    `}
 `

@@ -10,7 +10,7 @@ const AboutMeContent = () => (
       <Avatar />
       <Button>
         <a
-          href="https://drive.google.com/file/d/1gP_1tfR4_rrRtdvwIDt8EQQhL_qXFV6r/view?usp=sharing"
+          href="https://drive.google.com/file/d/1bEB1XRkdNVbgqsc9f0YJbjTNAIrH_XNh/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
         >

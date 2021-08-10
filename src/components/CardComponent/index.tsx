@@ -17,11 +17,6 @@ const CardComponent = () => (
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id id
         donec nisl duis elit in euismod pharetra.
       </p>
-      <ul>
-        <li>next.js</li>
-        <li>styled-components</li>
-        <li>typescript</li>
-      </ul>
     </a>
   </S.Wrapper>
 )

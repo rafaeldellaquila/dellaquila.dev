@@ -19,8 +19,6 @@ const MyWorkGithub = () => (
       <CardComponent />
       <CardComponent />
       <CardComponent />
-      <CardComponent />
-      <CardComponent />
     </S.CardWrapper>
   </>
 )

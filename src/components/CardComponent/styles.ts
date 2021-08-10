@@ -25,14 +25,5 @@ export const Wrapper = styled.div`
       font-size: ${theme.sizes.medium};
       margin-bottom: ${theme.sizes.large};
     }
-
-    ul {
-      color: ${theme.colors.lightSecondary};
-      font-size: ${theme.sizes.small};
-      display: flex;
-      justify-content: space-around;
-      align-items: flex-end;
-      font-weight: ${theme.fonts.bold};
-    }
   `}
 `
