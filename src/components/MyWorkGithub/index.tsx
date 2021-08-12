@@ -44,7 +44,7 @@ const MyWorkGithub: React.FC<QueryProps> = ({
         rel="noopener noreferrer"
         className="other-link"
       >
-        And many others...
+        And much more...
       </a>
     </S.Wrapper>
   )

@@ -1,12 +1,6 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const withPWA = require('next-pwa')
-const isProd = process.env.NODE_ENV === 'production'
 
-module.exports = withPWA({
-  pwa: {
-    dest: 'public',
-    disable: !isProd
-  },
+module.exports = {
   reactStrictMode: true,
   eslint: {
     dirs: ['src/**/*']
@@ -14,4 +8,4 @@ module.exports = withPWA({
   images: {
     domains: ['firebasestorage.googleapis.com']
   }
-})
+}

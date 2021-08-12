@@ -3,12 +3,12 @@
   "name": "Rafael Dell'Aquila Front-end Dev",
   "short_name": "Rafael - Front-end Dev",
   "background_color": "#00001b",
-  "description": "My personal site for my new projects",
+  "description": "I am a developer and UI designer based in Brazil.",
   "display": "fullscreen",
   "theme_color": "#00001b",
   "icons":[
       {
-        "src": "/images/favicon.png",
+        "src": "./images/favicon.png",
         "sizes": "16x16",
         "type": "image/png"
       }
