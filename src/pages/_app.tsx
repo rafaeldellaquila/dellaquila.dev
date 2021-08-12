@@ -9,7 +9,34 @@ function App({ Component, pageProps }: AppProps) {
     <ThemeProvider theme={theme}>
       <Head>
         <title>Rafael - Front-end Dev</title>
-        <meta name="description" content="My personal site!" />
+        <meta
+          name="description"
+          content="I am a Front-end developer based in Brazil."
+        />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://dellaquila.dev/" />
+        <meta property="og:title" content="Rafael - Front-end Dev" />
+        <meta
+          property="og:description"
+          content="I am a developer and UI designer based in Brazil."
+        />
+        <meta
+          property="og:image"
+          content="https://firebasestorage.googleapis.com/v0/b/dellaquila-cbdfe.appspot.com/o/thumbnail_site.jpg?alt=media&token=ccc215bc-1ac9-4eee-8629-9fccc59936c0"
+        />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://dellaquila.dev/" />
+        <meta property="twitter:title" content="Rafael - Front-end Dev" />
+        <meta
+          property="twitter:description"
+          content="I am a developer and UI designer based in Brazil."
+        />
+        <meta
+          property="twitter:image"
+          content="https://firebasestorage.googleapis.com/v0/b/dellaquila-cbdfe.appspot.com/o/thumbnail_site.jpg?alt=media&token=ccc215bc-1ac9-4eee-8629-9fccc59936c0"
+        />
         <link
           rel="manifest"
           crossOrigin="use-credentials"

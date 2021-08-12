@@ -21,10 +21,11 @@ const AboutMeContent = () => (
     <S.ContentWrapper>
       <Title text={'About me'} />
       <p className="first">
-        Hi! My name is Rafael, <span>nice to meet you</span>! I’ve been in Art
-        Direction since 2013 and I enjoy designing great ideas. My interest in
-        web development started back in 2017. While briefing with developers{' '}
-        <span>i discovered a new passion</span>.
+        Hi! My name is Rafael, <span>nice to meet you</span>! I work as a
+        Designer since 2013 and I enjoy designing great ideas. Now I am focused
+        on Front-end Development. My interest in web development started back in
+        2017. While briefing with developers&nbsp;
+        <span>I discovered a new passion</span>.
       </p>
       <p>
         Recently I started developing websites and improving my skills. I’m
