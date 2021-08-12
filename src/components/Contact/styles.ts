@@ -49,8 +49,11 @@ export const Wrapper = styled.div`
         font-size: ${theme.sizes.large};
 
         ${media.lessThan('small')`
+        margin: 0 auto;
+        margin-bottom: ${theme.sizes.large};
         font-size: ${theme.sizes.medium};
         text-decoration: underline;
+        text-align: center;
         `}
 
         ${media.greaterThan('small')`
