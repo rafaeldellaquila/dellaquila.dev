@@ -54,10 +54,11 @@ export const MyWorkSection = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 ${theme.sizes.xhuge} ${theme.sizes.xhuge} ${theme.sizes.xhuge};
+    margin: ${theme.sizes.huge} ${theme.sizes.xhuge} ${theme.sizes.xhuge}
+      ${theme.sizes.xhuge};
 
     ${media.lessThan('medium')`
-    margin: 0 ${theme.sizes.xlarge} ${theme.sizes.huge} ${theme.sizes.xlarge};
+    margin: ${theme.sizes.huge} ${theme.sizes.xlarge} ${theme.sizes.huge} ${theme.sizes.xlarge};
     `}
   `}
 `

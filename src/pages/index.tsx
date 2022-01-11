@@ -54,10 +54,6 @@ export default function Home({
 
       <SocialIcons data-aos="fade-up" />
 
-      <S.AboutMeSection id="about-me" data-aos="fade-up">
-        <AboutMeContent />
-      </S.AboutMeSection>
-
       <S.MyWorkSection id="my-work" data-aos="fade-up">
         <MyWorkGithub
           repositories={repositories}
@@ -66,6 +62,10 @@ export default function Home({
           itemShowcase={itemShowcase}
         />
       </S.MyWorkSection>
+
+      <S.AboutMeSection id="about-me" data-aos="fade-up">
+        <AboutMeContent />
+      </S.AboutMeSection>
 
       <S.ContactSection id="contact" data-aos="fade-up">
         <Contact />
